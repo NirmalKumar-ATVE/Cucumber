@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [BDD Test Suite]" parallel="tests">
+  <test name="Login and Update Profile Test(failed)" parallel="tests">
+    <classes>
+      <class name="runner.Runner">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0 1"/>
+          <include name="closeBroser"/>
+          <include name="setUpClass"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- runner.Runner -->
+    </classes>
+  </test> <!-- Login and Update Profile Test(failed) -->
+</suite> <!-- Failed suite [BDD Test Suite] -->
